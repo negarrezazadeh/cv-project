@@ -1,9 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
+
 import ProfilePic from "../../assets/images/profile-pic.jpg";
 import ProfileBg from "../../assets/images/profile-background.png";
 import Location from "../../assets/icons/location";
 import Green from "../../assets/icons/green";
+
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -25,23 +32,45 @@ export default function Hero() {
             className="absolute pt-5 lg:h-[320px] lg:w-[270px] lg:pt-0 lg:top-5 lg:right-[-25px] xl:right-[30px]"
           />
         </div>
-        <div className="pt-16 lg:w-[768px]">
+        <div className="pt-10 lg:pt-5 lg:w-[768px]">
           <h1 className={"text-4xl font-semibold"}>Hi, I’m Negar 👋</h1>
-          <p className={"pt-2 text-base text-gray600"}>
-            I'm a front-end developer with a focus on creating (and occasionally
-            designing) exceptional digital experiences that are fast,
-            accessible, visually appealing, and responsive.
+          <p className={"pt-2 text-base text-gray600 text-justify"}>
+            I’m a frontend developer eager to grow and collaborate with diverse
+            teams. I love contributing to the community and have a strong
+            interest in open-source software development. With a keen eye for
+            detail and a deep understanding of modern web technologies, I strive
+            to create seamless and user-friendly digital experiences. I’m always
+            looking for opportunities to learn, improve, and share knowledge
+            with others👩🏻‍💻.
           </p>
+
           <div className="py-12">
             <div className="flex items-center gap-2">
               <Location />
-              <p className="text-base text-gray600">Enqelab, Tehran</p>
+              <p className="text-base text-gray600">Shariati, Tehran</p>
             </div>
             <div className="flex items-center gap-2 pt-2">
               <Green />
               <p className="text-base text-gray600">
                 Available for new projects
               </p>
+            </div>
+
+            <div className="flex gap-x-5 text-gray600 mt-10">
+              <Link to={"https://github.com/negarrezazadeh"}>
+                <FaGithub size={25} />
+              </Link>
+              <Link
+                to={"https://www.linkedin.com/in/negar-rezazadeh-327058356/"}
+              >
+                <FaLinkedin size={25} />
+              </Link>
+              <Link to={"https://t.me/rznegrr210"}>
+                <FaTelegram size={25} />
+              </Link>
+              <Link to={"https://wa.me/989938570718"}>
+                <FaWhatsapp size={25}/>
+              </Link>
             </div>
           </div>
         </div>
