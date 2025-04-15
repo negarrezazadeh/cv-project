@@ -1,12 +1,7 @@
 import Layout from "./component/layout";
-import { ThemeProvider } from "./store/themeContext";
 
 function App() {
-  return (
-      <ThemeProvider>
-        <Layout />
-      </ThemeProvider>
-  );
+  return <Layout />;
 }
 
 export default App;
