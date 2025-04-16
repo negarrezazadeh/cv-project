@@ -11,9 +11,9 @@ export default function LanguageSwitcher() {
   return (
     <button
       onClick={toggleLanguage}
-      className="px-4 py-2 rounded-2xl bg-gray-100 hover:bg-gray-200 transition-all text-sm shadow-md border border-gray-300"
+      className="px-3 py-1 rounded-2xl bg-gray100 hover:bg-gray600 hover:text-white transition-all text-sm shadow-md border border-gray-300"
     >
-      {i18n.language === "fa" ? "English" : "فارسی"}
+      {i18n.language === "fa" ? "En" : "فا"}
     </button>
   );
 }

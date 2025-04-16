@@ -11,5 +11,9 @@
     "description": "I’m a frontend developer eager to grow and collaborate with diverse teams. I love contributing to the community and have a strong interest in open-source software development. With a keen eye for detail and a deep understanding of modern web technologies, I strive to create seamless and user-friendly digital experiences. I’m always looking for opportunities to learn, improve, and share knowledge with others👩🏻‍💻.",
     "location": "Shariati, Tehran",
     "availability": "Available for new projects"
+  },
+  "skills": {
+    "title": "The skills, tools and technologies I am really good at:",
+    "button": "Skills"
   }
 }
