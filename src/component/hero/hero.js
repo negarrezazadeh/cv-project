@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 import ProfilePic from "../../assets/images/profile-pic.jpg";
 import ProfileBg from "../../assets/images/profile-background.png";
@@ -11,7 +12,6 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
-import { useTranslation } from "react-i18next";
 
 export default function Hero() {
   const {t} = useTranslation()
@@ -38,24 +38,18 @@ export default function Hero() {
         <div className="pt-10 lg:pt-5 lg:w-[768px]">
           <h1 className={"text-4xl font-semibold"}>{t("hero.title")}</h1>
           <p className={"pt-2 text-base text-gray600 text-justify"}>
-            I’m a frontend developer eager to grow and collaborate with diverse
-            teams. I love contributing to the community and have a strong
-            interest in open-source software development. With a keen eye for
-            detail and a deep understanding of modern web technologies, I strive
-            to create seamless and user-friendly digital experiences. I’m always
-            looking for opportunities to learn, improve, and share knowledge
-            with others👩🏻‍💻.
+          {t("hero.description")}
           </p>
 
           <div className="py-12">
             <div className="flex items-center gap-2">
               <Location />
-              <p className="text-base text-gray600">Shariati, Tehran</p>
+              <p className="text-base text-gray600">{t("hero.location")}</p>
             </div>
             <div className="flex items-center gap-2 pt-2">
               <Green />
               <p className="text-base text-gray600">
-                Available for new projects
+                {t("hero.availability")}
               </p>
             </div>
 
