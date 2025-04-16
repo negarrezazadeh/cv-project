@@ -2,44 +2,36 @@ import React from "react";
 import Button from "../ui/Button";
 import ExperienceCard from "../ui/ExperienceCard";
 import { Element } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 export default function Experience() {
+  const { t } = useTranslation();
   return (
     <Element name="experience-section">
       <div className="py-16 md:px-12 lg:py-24">
         <div className="px-4 lg:px-20">
-          <Button>Experience</Button>
+          <Button>{t("experiences.button")}</Button>
           <p className="pt-4 text-lg text-gray600 text-center pb-6">
-            Here is a quick summary of my most recent experiences:
+            {t("experiences.title")}
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <ExperienceCard
-              date="September 2021 - Present"
-              title="Open Source Developer"
-              tasks={[
-                "Develop and maintain open source web applications using modern web technologies",
-                "Contribute to various open source repositories by fixing bugs, improving performance, and adding features",
-                "Collaborate with a global community of developers to enhance the usability and functionality of open source projects",
-              ]}
+              date={t("experiences.openSource.date")}
+              title={t("experiences.openSource.title")}
+              tasks={t("experiences.openSource.tasks", { returnObjects: true })}
             />
+
             <ExperienceCard
-              date="June 2023 - March 2024"
-              title="Baskar"
-              tasks={[
-                "Led the design and development of a highly interactive home page using React, enhancing user engagement and overall site performance",
-                "Utilized modern front-end tools and libraries like React, CSS-in-JS, and Tailwind to ensure a seamless and responsive user interface",
-                "Collaborated closely with the design team to implement intuitive UI/UX patterns that improved user experience",
-              ]}
+              date={t("experiences.baskar.date")}
+              title={t("experiences.baskar.title")}
+              tasks={t("experiences.baskar.tasks", { returnObjects: true })}
             />
+
             <ExperienceCard
-              date="January 2024 - Present"
-              title="Narcis cosmetics"
-              tasks={[
-                "Designed the homepage using WordPress, ensuring an engaging and user-friendly experience",
-                "Created and optimized the 'Contact Us' page to improve user interaction and communication",
-                "Managed daily product updates, including price changes, to ensure accurate and timely information on the site",
-              ]}
+              date={t("experiences.narcis.date")}
+              title={t("experiences.narcis.title")}
+              tasks={t("experiences.narcis.tasks", { returnObjects: true })}
             />
           </div>
         </div>

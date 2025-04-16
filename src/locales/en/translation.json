@@ -19,5 +19,36 @@
   "contact": {
     "title": "What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.",
     "button": "Get In Touch"
+  },
+  "experiences": {
+    "title": "Here is a quick summary of my most recent experiences:",
+    "button": "Experience",
+    "openSource": {
+      "date": "September 2021 - Present",
+      "title": "Open Source Developer",
+      "tasks": [
+        "Develop and maintain open source web applications using modern web technologies",
+        "Contribute to various open source repositories by fixing bugs, improving performance, and adding features",
+        "Collaborate with a global community of developers to enhance the usability and functionality of open source projects"
+      ]
+    },
+    "baskar": {
+      "date": "June 2023 - March 2024",
+      "title": "Baskar",
+      "tasks": [
+        "Managed the design and development of a highly interactive home page using React, enhancing user engagement and overall site performance",
+        "Utilized modern front-end tools and libraries like React, CSS-in-JS, and Tailwind to ensure a seamless and responsive user interface",
+        "Collaborated closely with the design team to implement intuitive UI/UX patterns that improved user experience"
+      ]
+    },
+    "narcis": {
+      "date": "January 2024 - Present",
+      "title": "Narcis cosmetics",
+      "tasks": [
+        "Designed the homepage using WordPress, ensuring an engaging and user-friendly experience",
+        "Created and optimized the 'Contact Us' page to improve user interaction and communication",
+        "Managed daily product updates, including price changes, to ensure accurate and timely information on the site"
+      ]
+    }
   }
 }
