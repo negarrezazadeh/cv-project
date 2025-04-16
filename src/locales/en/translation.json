@@ -50,5 +50,23 @@
         "Managed daily product updates, including price changes, to ensure accurate and timely information on the site"
       ]
     }
+  },
+  "works": {
+    "button": "Work",
+    "description": "Here is a quick summary of my most recent experiences:",
+    "samples": {
+      "geshniz": {
+        "title": "Geshniz",
+        "desc": "This site is a single-page food ordering website written with NextJS and has a user panel, shopping cart, and products that use Redux Toolkit technology."
+      },
+      "narcis": {
+        "title": "Narcis shop",
+        "desc": "This site is a cosmetics website that was created with WordPress, and the main page and contact us, this website was designed with Elementor."
+      },
+      "shopCenter": {
+        "title": "Shop Center",
+        "desc": "This site is a store site based on a design in Figma, and the products of this site are built in Google Firebase. all the site's styling is done with TailwindCss."
+      }
+    }
   }
 }

@@ -18,11 +18,11 @@ export default function WorkSample(props) {
         />
       </div>
       <div className="p-8">
-        <p className="text-left font-semibold text-lg">{title}</p>
+        <p className="font-semibold text-lg">{title}</p>
         <p className="py-6 text-gray600">{desc}</p>
         <div className="flex flex-wrap gap-x-[8px] gap-y-[8px] pb-6">
-          {tech.map((Tname,index) => (
-          <Button key={index}>{Tname}</Button>
+          {tech.map((tName,index) => (
+          <Button key={index}>{tName}</Button>
           ))}
         </div>
         <Share onClick={()=>handleClickUrl(url)}/>
