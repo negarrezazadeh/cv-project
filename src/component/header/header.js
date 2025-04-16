@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Hug from "../../assets/icons/hug";
+import { LuMenu } from "react-icons/lu";
 import MobileMenu from "../mobile-menu/Mobile-menu";
 import Navbar from "../ui/Navbar";
 import LanguageSwitcher from "../ui/LanguageSwitcher";
@@ -22,11 +22,12 @@ export default function Header() {
       <div className="flex justify-between h-[68px] items-center p-4 md:px-12 lg:px-20 lg:py-4">
         {/* mobile header */}
         <div className="lg:hidden flex justify-between w-full">
-          <Hug onClick={openMobileMenuHandler} />
           <div className="flex gap-2 items-center">
             <LanguageSwitcher />
             <ThemeSwitcher />
           </div>
+          <LuMenu onClick={openMobileMenuHandler} size={30}/>
+
         </div>
 
         {/* desktop header */}

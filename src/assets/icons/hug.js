@@ -2,8 +2,8 @@ export default function Hug(props) {
   return (
     <div onClick={props.onClick}>
       <svg
-        width="37"
-        height="36"
+        width="42"
+        height="42"
         viewBox="0 0 37 36"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

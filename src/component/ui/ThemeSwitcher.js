@@ -1,10 +1,11 @@
-import React from 'react';
 
 const ThemeSwitcher = () => {
+ 
+
   return (
     <>
       <label className="switch">
-        <input id="input" type="checkbox" defaultChecked="darkTheme" />
+        <input id="input" type="checkbox"/>
         <div className="slider round">
           <div className="sun-moon">
             <svg id="moon-dot-1" className="moon-dot" viewBox="0 0 100 100">
