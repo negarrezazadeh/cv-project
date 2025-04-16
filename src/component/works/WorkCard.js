@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../ui/Button";
-import Share from "../../assets/icons/share";
+import { FiExternalLink } from "react-icons/fi";
 
 export default function WorkCard(props) {
   const handleClickUrl = (url) => {
@@ -9,8 +9,8 @@ export default function WorkCard(props) {
 
   const { img, title, desc, tech, url } = props;
   return (
-    <div className="shadow-md rounded-xl mt-6 lg:mt-12 lg:flex items-center">
-      <div className="p-8 lg:p-12 stroke-1 stroke-gray100 bg-gray50 rounded-t-xl ">
+    <div className="shadow-md rounded-xl mt-6 lg:mt-12 lg:flex items-center bg-gray50 dark:bg-darkGray100">
+      <div className="p-8 lg:p-12 stroke-1 stroke-gray100 dark:stroke-darkGray dark:bg-darkGray200 bg-gray100 rounded-tl-xl rounded-bl-xl">
         <img
           src={img}
           className="shadow-lg rounded-lg md:m-auto lg:max-w-80 lg:max-h-72"
@@ -18,14 +18,17 @@ export default function WorkCard(props) {
         />
       </div>
       <div className="p-8">
-        <p className="font-semibold text-lg">{title}</p>
-        <p className="py-6 text-gray600">{desc}</p>
+        <p className="font-semibold text-lg text-gray-500 dark:text-gray50">
+          {title}
+        </p>
+        <p className="py-6 text-gray600 dark:text-darkGray600">{desc}</p>
         <div className="flex flex-wrap gap-x-[8px] gap-y-[8px] pb-6">
           {tech.map((tName, index) => (
             <Button key={index}>{tName}</Button>
           ))}
         </div>
-        <Share onClick={() => handleClickUrl(url)} />
+
+        <FiExternalLink className="text-darkGray200 dark:text-gray200" onClick={() => handleClickUrl(url)} size={25}/>
       </div>
     </div>
   );

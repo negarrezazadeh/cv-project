@@ -18,7 +18,7 @@ export default function Header() {
   };
 
   return (
-    <div className="fixed bg-default z-50 w-full dark:bg-black/80">
+    <div className="fixed bg-gray50 border-b border-darkGray800 z-50 w-full dark:bg-darkGray50 dark:border-gray700">
       <div className="flex justify-between h-[68px] items-center p-4 md:px-12 lg:px-20 lg:py-4">
         {/* mobile header */}
         <div className="lg:hidden flex justify-between w-full">
@@ -26,7 +26,7 @@ export default function Header() {
             <LanguageSwitcher />
             <ThemeSwitcher />
           </div>
-          <LuMenu onClick={openMobileMenuHandler} size={30}/>
+          <LuMenu onClick={openMobileMenuHandler} size={30} className="text-gray600 dark:text-darkGray700"/>
         </div>
 
         {/* desktop header */}

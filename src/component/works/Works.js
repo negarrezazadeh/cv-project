@@ -13,9 +13,9 @@ export default function Works() {
 
   return (
     <Element name="works-section">
-      <div className="py-16 bg-gray50 px-4 md:px-12 lg:py-24 lg:px-20">
+      <div className="py-16 bg-gray50 px-4 md:px-12 lg:py-24 lg:px-20 dark:bg-darkGray50">
         <Button>{t("works.button")}</Button>
-        <p className="pt-4 text-lg text-gray600 text-center">
+        <p className="pt-4 text-lg text-gray600 dark:text-darkGray600 text-center">
           {t("works.description")}
         </p>
         <WorkCard

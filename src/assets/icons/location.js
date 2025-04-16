@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Location() {
   return (
-    <div>
+    <div className="dark:text-darkGray700">
       <svg
         width="24"
         height="24"

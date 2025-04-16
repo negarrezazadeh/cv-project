@@ -15,7 +15,7 @@ export default function Bootstrap() {
           fillRule="evenodd"
         />
       </svg>
-      <p className="pt-3 lg:pt-5 text-gray600">Bootstrap</p>
+      <p className="pt-3 lg:pt-5 text-gray600 dark:text-darkGray600">Bootstrap</p>
     </div>
   );
 }

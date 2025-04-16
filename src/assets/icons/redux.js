@@ -15,7 +15,7 @@ export default function Redux() {
           fill="#764ABC"
         />
       </svg>
-      <p className="pt-3 lg:pt-5 text-gray600">Redux</p>
+      <p className="pt-3 lg:pt-5 text-gray600 dark:text-darkGray600">Redux</p>
     </div>
   );
 }

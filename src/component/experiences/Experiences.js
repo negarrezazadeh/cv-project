@@ -8,10 +8,10 @@ export default function Experiences() {
   const { t } = useTranslation();
   return (
     <Element name="experiences-section">
-      <div className="py-16 md:px-12 lg:py-24">
+      <div className="py-16 md:px-12 lg:py-24 dark:bg-darkGray bg-default">
         <div className="px-4 lg:px-20">
           <Button>{t("experiences.button")}</Button>
-          <p className="pt-4 text-lg text-gray600 text-center pb-6">
+          <p className="pt-4 text-lg text-gray600 dark:text-darkGray600 text-center pb-6">
             {t("experiences.title")}
           </p>
 

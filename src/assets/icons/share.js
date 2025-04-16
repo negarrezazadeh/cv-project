@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Share(props) {
   return (
-    <div className="cursor-pointer" onClick={props.onClick}>
+    <div className="cursor-pointer text-gray50 dark:text-darkGray50" onClick={props.onClick}>
       <svg
         width="36"
         height="36"

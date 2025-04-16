@@ -20,9 +20,9 @@ export default function Skills() {
 
   return (
     <Element name="skills-section">
-      <div className="py-16 bg-gray50 px-4 md:px-12 lg:px-20 lg:py-24">
+      <div className="py-16 bg-gray50 px-4 md:px-12 lg:px-20 lg:py-24 dark:bg-darkGray50">
         <Button>{t("skills.button")}</Button>
-        <p className="pt-4 pb-6 lg:pb-12 text-lg text-gray600 text-center">
+        <p className="pt-4 pb-6 lg:pb-12 text-lg text-gray600 dark:text-darkGray600 text-center">
           {t("skills.title")}
         </p>
         <div className="grid grid-cols-3 gap-3 gap-y-12 place-items-center md:grid-cols-4 lg:grid-cols-7 lg:gap-y-12">
