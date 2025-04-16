@@ -1,10 +1,12 @@
 import { useState } from "react";
+
 import Hug from "../../assets/icons/hug";
 import logo from "../../assets/images/logo.svg";
-import MobileMenu from "../mobile-menu/mobile-menu";
-import Navbar from "../ui/navbar";
+import MobileMenu from "../mobile-menu/Mobile-menu";
+import Navbar from "../ui/Navbar";
 import Divide from "../../assets/icons/divide";
-import DownloadCvBtn from "../ui/downloadCvBtn";
+import DownloadCvBtn from "../ui/DownloadCvBtn";
+import LanguageSwitcher from "../ui/LanguageSwitcher";
 
 export default function Header() {
   const [togglemenu, setToggleMenu] = useState(false);
@@ -32,6 +34,10 @@ export default function Header() {
           <a href="./negar-rezazadeh-resume.pdf" download={'negar-rezazadeh-resume.pdf'}>
             <DownloadCvBtn className="px-4 py-1.5 ml-4" />
           </a>
+        </div>
+
+        <div>
+          <LanguageSwitcher/>
         </div>
 
         {togglemenu && <MobileMenu onClick={closeMobileMenuHandler} />}

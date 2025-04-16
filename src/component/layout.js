@@ -1,10 +1,10 @@
-import Hero from "../component/hero/hero";
-import Experience from "./experience/experience";
-import Skills from "./skills/skills";
-import Work from "./Work/work";
-import ContactMe from "./contact me/contact-me";
-import Header from "./header/header";
-import Footer from "./footer/footer";
+import Hero from "./hero/Hero";
+import Experience from "./experience/Experience";
+import Skills from "./skills/Skills";
+import Work from "./work/Work";
+import ContactMe from "./contact_me/Contact_Me";
+import Header from "./header/Header";
+import Footer from "./footer/Footer";
 import { useTranslation } from "react-i18next";
 
 export default function Layout(props) {

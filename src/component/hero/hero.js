@@ -11,8 +11,11 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
+  const {t} = useTranslation()
+
   return (
     <Element name="hero-section">
       <div
@@ -24,7 +27,7 @@ export default function Hero() {
           <img
             src={ProfilePic}
             alt="profile"
-            className="absolute z-10 h-[270px] lg:h-[300px] lg:w-[240px]"
+            className="absolute z-10 h-[270px] lg:h-[300px] lg:w-[240px] object-cover"
           />
           <img
             src={ProfileBg}
@@ -33,7 +36,7 @@ export default function Hero() {
           />
         </div>
         <div className="pt-10 lg:pt-5 lg:w-[768px]">
-          <h1 className={"text-4xl font-semibold"}>Hi, I’m Negar 👋</h1>
+          <h1 className={"text-4xl font-semibold"}>{t("hero.title")}</h1>
           <p className={"pt-2 text-base text-gray600 text-justify"}>
             I’m a frontend developer eager to grow and collaborate with diverse
             teams. I love contributing to the community and have a strong

@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../ui/button";
+import Button from "./Button";
 import Share from "../../assets/icons/share";
 
 export default function WorkSample(props) {

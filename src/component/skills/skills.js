@@ -1,4 +1,4 @@
-import Button from "../ui/button";
+import Button from "../ui/Button";
 import React from "react";
 import { Element } from "react-scroll";
 import Javascript from "../../assets/icons/javascript";

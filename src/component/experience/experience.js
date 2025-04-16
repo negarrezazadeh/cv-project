@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "../ui/button";
-import ExperienceCard from "../ui/experienceCard";
+import Button from "../ui/Button";
+import ExperienceCard from "../ui/ExperienceCard";
 import { Element } from "react-scroll";
 
 export default function Experience() {

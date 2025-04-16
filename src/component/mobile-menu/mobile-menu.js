@@ -1,7 +1,7 @@
-import Navbar from "../ui/navbar";
+import Navbar from "../ui/Navbar";
 import logo from "../../assets/images/logo.svg";
 import Exit from "../../assets/icons/exit";
-import DownloadCvBtn from "../ui/downloadCvBtn";
+import DownloadCvBtn from "../ui/DownloadCvBtn";
 
 export default function MobileMenu(props) {
   return (

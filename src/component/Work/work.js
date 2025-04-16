@@ -1,6 +1,6 @@
 import React from "react";
-import WorkSample from "../ui/workSamples";
-import Button from "../ui/button";
+import WorkSample from "../ui/WorkSamples";
+import Button from "../ui/Button";
 import { Element } from "react-scroll";
 import geshniz from "../../assets/images/geshniz.png";
 import narcis from "../../assets/images/narcis.png";

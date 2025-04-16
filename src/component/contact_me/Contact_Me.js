@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import Button from "../ui/button";
+import Button from "../ui/Button";
 import Mail from "../../assets/icons/mail";
 import Phone from "../../assets/icons/phone";
 import Copy from "../../assets/icons/copy";
