@@ -1,11 +1,11 @@
 import React from "react";
-import Button from "./Button";
+import Button from "../ui/Button";
 import Share from "../../assets/icons/share";
 
-export default function WorkSample(props) {
+export default function WorkCard(props) {
   const handleClickUrl = (url) => {
-    window.open(url, '_blank')
-  }
+    window.open(url, "_blank");
+  };
 
   const { img, title, desc, tech, url } = props;
   return (
@@ -21,11 +21,11 @@ export default function WorkSample(props) {
         <p className="font-semibold text-lg">{title}</p>
         <p className="py-6 text-gray600">{desc}</p>
         <div className="flex flex-wrap gap-x-[8px] gap-y-[8px] pb-6">
-          {tech.map((tName,index) => (
-          <Button key={index}>{tName}</Button>
+          {tech.map((tName, index) => (
+            <Button key={index}>{tName}</Button>
           ))}
         </div>
-        <Share onClick={()=>handleClickUrl(url)}/>
+        <Share onClick={() => handleClickUrl(url)} />
       </div>
     </div>
   );

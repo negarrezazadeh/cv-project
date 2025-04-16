@@ -13,10 +13,10 @@ export default function Navbar() {
         <Link to="skills-section" smooth={true} duration={500}>
           <li>{t("navbar.skills")}</li>
         </Link>
-        <Link to="experience-section" smooth={true} duration={500}>
+        <Link to="experiences-section" smooth={true} duration={500}>
           <li>{t("navbar.experiences")}</li>
         </Link>
-        <Link to="work-section" smooth={true} duration={500}>
+        <Link to="works-section" smooth={true} duration={500}>
           <li>{t("navbar.work")}</li>
         </Link>
         <Link to="contact-section" smooth={true} duration={500}>

@@ -27,7 +27,7 @@ export default function FireBase() {
           fill="#DD2C00"
         />
       </svg>
-      <p className="pt-2 text-gray600">Firebase</p>
+      <p className="pt-3 lg:pt-5 text-gray600">Firebase</p>
     </div>
   );
 }

@@ -2,6 +2,19 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@font-face {
+  font-family: "kalameh";
+  src: url("../src/assets/font/KalamehWeb_Regular.woff2") format("woff2"),
+    url("../src/assets/font/KalamehWeb_Regular.woff") format("woff"),
+    url("../src/assets/font/KalamehWeb_Regular.ttf") format("truetype");
+}
+
+body,
+input,
+button {
+  font-family: "kalameh";
+}
+
 .tooltip {
   position: absolute;
   background-color: #333;

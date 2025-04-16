@@ -37,7 +37,7 @@ export default function Hero() {
         </div>
         <div className="pt-10 lg:pt-5 lg:w-[768px]">
           <h1 className={"text-4xl font-semibold"}>{t("hero.title")}</h1>
-          <p className={"pt-2 text-base text-gray600 text-justify leading-7"}>
+          <p className={"pt-2 lg:pt-5 text-base text-gray600 text-justify leading-8"}>
           {t("hero.description")}
           </p>
 

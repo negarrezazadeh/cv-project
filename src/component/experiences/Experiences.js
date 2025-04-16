@@ -1,13 +1,13 @@
 import React from "react";
 import Button from "../ui/Button";
-import ExperienceCard from "../ui/ExperienceCard";
+import ExperienceCard from "./ExperienceCard";
 import { Element } from "react-scroll";
 import { useTranslation } from "react-i18next";
 
-export default function Experience() {
+export default function Experiences() {
   const { t } = useTranslation();
   return (
-    <Element name="experience-section">
+    <Element name="experiences-section">
       <div className="py-16 md:px-12 lg:py-24">
         <div className="px-4 lg:px-20">
           <Button>{t("experiences.button")}</Button>

@@ -1,7 +1,7 @@
 import Hero from "./hero/Hero";
-import Experience from "./experience/Experience";
+import Experiences from "./experiences/Experiences";
 import Skills from "./skills/Skills";
-import Work from "./work/Work";
+import Works from "./works/Works";
 import ContactMe from "./contact_me/Contact_Me";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
@@ -14,8 +14,8 @@ export default function Layout(props) {
       <Header onClick={props.onClick}/>
       <Hero />
       <Skills />
-      <Experience />
-      <Work />
+      <Experiences />
+      <Works />
       <ContactMe />
       <Footer />
     </div>

@@ -11,7 +11,7 @@ export default function ExperienceCard({title, date, tasks=[]}) {
         <p className="py-4 text-base text-gray700">{date}</p>
         <div>
           <p className="pb-4 text-lg text-gray900 font-semibold">{title}</p>
-          <ul className="text-gray600 list-disc ml-6">
+          <ul className="text-gray600 list-disc ml-6 leading-7">
             {tasks.map((task, index) => (
               <li key={index}>{task}</li>
             ))}
