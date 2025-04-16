@@ -4,11 +4,13 @@ import Mail from "../../assets/icons/mail";
 import Phone from "../../assets/icons/phone";
 import Copy from "../../assets/icons/copy";
 import { Element } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 export default function ContactMe() {
   const [showTooltip, setShowTooltip] = useState(false);
   const phoneText = useRef(null);
   const emailText = useRef(null);
+  const {t} = useTranslation()
 
   const copyText = (textRef) => {
     const textToCopy = textRef.current.innerText;
@@ -27,10 +29,9 @@ export default function ContactMe() {
     <Element name="contact-section">
       <div className="py-16 px-4 md:px-12 lg:py-24 lg:px-20">
         <div>
-          <Button className={"pb-6"}>Get in touch</Button>
+          <Button className={"pb-6"}>{t("contact.button")}</Button>
           <p className="text-center text-lg text-gray600">
-            What’s next? Feel free to reach out to me if you're looking for a
-            developer, have a query, or simply want to connect.
+           {t("contact.title")}
           </p>
           <div className="relative w-[85px] m-auto">
             {showTooltip && <p className="tooltip">text copied!</p>}
@@ -53,7 +54,7 @@ export default function ContactMe() {
               className="px-2 text-lg font-semibold	text-gray900"
               ref={phoneText}
             >
-              +98 9198560718
+              09198560718
             </p>
             <button onClick={() => copyText(phoneText)}>
               <Copy />

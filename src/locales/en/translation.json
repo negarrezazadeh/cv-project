@@ -15,5 +15,9 @@
   "skills": {
     "title": "The skills, tools and technologies I am really good at:",
     "button": "Skills"
+  },
+  "contact": {
+    "title": "What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.",
+    "button": "Get In Touch"
   }
 }
