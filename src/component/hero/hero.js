@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
 import { useTranslation } from "react-i18next";
-import useDarkMode from "../../hook/useDarkMode";
-
+import { useDarkMode } from "../../context/DarkMode";
 import ProfilePic from "../../assets/images/profile-pic.jpg";
 import ProfileDarkBg from "../../assets/images/profile-dark-background.png";
 import ProfileBg from "../../assets/images/profile-background.png";
@@ -16,8 +15,8 @@ import { FaTelegram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function Hero() {
-  const [theme] = useDarkMode();
-  const { t } = useTranslation();
+  const {theme} = useDarkMode();
+  const { t } = useTranslation();  
 
   return (
     <Element name="hero-section">
@@ -30,12 +29,12 @@ export default function Hero() {
           <img
             src={ProfilePic}
             alt="profile"
-            className="absolute z-10 h-[270px] lg:h-[300px] lg:w-[240px] object-cover"
+            className="absolute z-10 w-[220px] h-[270px] lg:h-[300px] lg:w-[240px] object-cover"
           />
           <img
             src={theme === "dark" ? ProfileDarkBg : ProfileBg}
             alt="profile-background"
-            className="absolute pt-5 lg:h-[320px] lg:w-[270px] lg:pt-0 lg:top-5 lg:right-[-25px] xl:right-[30px]"
+            className="absolute pt-5 w-[260px] h-[260px] lg:h-[320px] lg:w-[270px] lg:pt-0 lg:top-5 lg:right-[-25px] xl:right-[30px]"
           />
         </div>
         <div className="pt-10 lg:pt-5 lg:w-[768px]">

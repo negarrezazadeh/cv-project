@@ -1,7 +1,10 @@
-import useDarkMode from "../../hook/useDarkMode";
+import { useDarkMode } from "../../context/DarkMode";
 
 export default function ThemeSwitcher() {
-  const [theme, toggleTheme] = useDarkMode();
+  const {theme, toggleTheme} = useDarkMode();
+
+  console.log(theme);
+  
 
   return (
     <>

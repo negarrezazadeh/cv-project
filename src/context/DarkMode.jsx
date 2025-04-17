@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
-export default function useDarkMode() {
+const DarkModeContext = createContext();
+
+const DarkModeProvider = ({ children }) => {
   const [theme, setTheme] = useState("light");
 
   const toggleTheme = () => {
@@ -16,5 +18,16 @@ export default function useDarkMode() {
     document.documentElement.classList.toggle("dark", localTheme === "dark");
   }, []);
 
-  return [theme, toggleTheme];
-}
+  return (
+    <DarkModeContext.Provider value={{ theme, setTheme, toggleTheme }}>
+      {children}
+    </DarkModeContext.Provider>
+  );
+};
+
+const useDarkMode = () => {
+  const context = useContext(DarkModeContext);
+  return context;
+};
+
+export { DarkModeProvider, useDarkMode };
