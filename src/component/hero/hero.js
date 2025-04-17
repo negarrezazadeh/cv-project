@@ -43,7 +43,7 @@ export default function Hero() {
           </h1>
           <p
             className={
-              "pt-2 lg:pt-5 text-base text-gray600 dark:text-darkGray600 text-justify leading-8"
+              "pt-5 text-base text-gray600 dark:text-darkGray600 text-justify leading-8"
             }
           >
             {t("hero.description")}
