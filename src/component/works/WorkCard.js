@@ -18,7 +18,7 @@ export default function WorkCard(props) {
         />
       </div>
       <div className="p-8">
-        <p className="font-semibold text-lg text-gray-500 dark:text-gray50">
+        <p className="font-semibold text-lg text-gray300 dark:text-gray50">
           {title}
         </p>
         <p className="py-6 text-gray600 dark:text-darkGray600">{desc}</p>
@@ -28,7 +28,7 @@ export default function WorkCard(props) {
           ))}
         </div>
 
-        <FiExternalLink className="text-darkGray200 dark:text-gray200" onClick={() => handleClickUrl(url)} size={25}/>
+        <FiExternalLink className="text-darkGray300 dark:text-darkGray600 cursor-pointer" onClick={() => handleClickUrl(url)} size={23}/>
       </div>
     </div>
   );

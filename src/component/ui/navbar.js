@@ -21,7 +21,7 @@ export default function Navbar() {
             to={item.id}
             smooth={true}
             duration={500}
-            className="group cursor-pointer"
+            className="group cursor-pointer w-full lg:w-auto border-b lg:border-none border-gray100 dark:border-darkGray100 pb-7 px-5 lg:px-0 lg:pb-0 last:border-none"
           >
             <li className="relative text-gray700 dark:text-darkGray700 hover:text-purple-400 dark:hover:text-purple-400 transition-colors duration-300">
               {item.label}

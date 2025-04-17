@@ -26,7 +26,11 @@ export default function Header() {
             <LanguageSwitcher />
             <ThemeSwitcher />
           </div>
-          <LuMenu onClick={openMobileMenuHandler} size={30} className="text-gray600 dark:text-darkGray700"/>
+          <LuMenu
+            onClick={openMobileMenuHandler}
+            size={30}
+            className="text-gray600 dark:text-darkGray700"
+          />
         </div>
 
         {/* desktop header */}
@@ -38,7 +42,7 @@ export default function Header() {
           </div>
         </div>
 
-        {toggleMenu && <MobileMenu onClick={closeMobileMenuHandler} />}
+        {toggleMenu && <MobileMenu onClose={closeMobileMenuHandler} />}
       </div>
     </div>
   );

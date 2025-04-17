@@ -25,7 +25,7 @@ export default function Hero() {
           "py-16 px-4 md:px-12 lg:px-20 lg:pb-24 lg:pt-40 lg:flex lg:flex-row-reverse lg:justify-between bg-default dark:bg-darkGray"
         }
       >
-        <div className="relative flex justify-center h-[300px] lg:w-[400px] lg:h-[360px] mt-10 md:mt-0">
+        <div className="relative flex justify-center h-[300px] lg:w-[400px] lg:h-[360px] mt-16 md:mt-0">
           <img
             src={ProfilePic}
             alt="profile"

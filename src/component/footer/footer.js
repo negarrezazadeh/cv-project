@@ -9,9 +9,8 @@ export default function Footer() {
       <p className="text-sm pl-1">
         2024 | Designed and coded with ❤️️ by
         <span>
-          <Link href="https://github.com/negarrezazadeh">Me</Link>
+          <Link href="https://www.linkedin.com/in/negar-rezazadeh-327058356/" className="cursor-pointer"> Me</Link>
         </span>
-        😊
       </p>
     </div>
   );
