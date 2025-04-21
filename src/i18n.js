@@ -1,21 +1,26 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
 
 import en from "./locales/en/translation.json";
 import fa from "./locales/fa/translation.json";
 
-const savedLang = typeof window !== "undefined" ? localStorage.getItem("i18nextLng") || "en" : "en";
-
-i18n.use(initReactI18next).init({
-  resources: {
-    en: { translation: en },
-    fa: { translation: fa },
-  },
-  lng: savedLang,
-  fallbackLng: "en",
-  interpolation: {
-    escapeValue: false,
-  },
-});
+i18n
+  .use(LanguageDetector) 
+  .use(initReactI18next)
+  .init({
+    resources: {
+      en: { translation: en },
+      fa: { translation: fa },
+    },
+    fallbackLng: "en", // if user computer language not found use this
+    interpolation: {
+      escapeValue: false,
+    },
+    detection: {
+      order: ["localStorage", "navigator"],
+      caches: ["localStorage"],
+    },
+  });
 
 export default i18n;

@@ -6,7 +6,7 @@ export default function LanguageSwitcher() {
   const toggleLanguage = () => {
     const newLang = i18n.language === "fa" ? "en" : "fa";
     i18n.changeLanguage(newLang);
-  };
+  };  
 
   return (
     <button
