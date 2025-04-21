@@ -1,10 +1,10 @@
 import React from "react";
-import SkillsIcons from "./skills-icon";
+import SkillIcons from "../../component/ui/Skill_icons";
 
 export default function NextJs() {
   return (
     <div>
-      <SkillsIcons desc='Next.js'>
+      <SkillIcons desc='Next.js'>
         <svg
           width="64"
           height="64"
@@ -72,7 +72,7 @@ export default function NextJs() {
             </clipPath>
           </defs>
         </svg>
-      </SkillsIcons>
+      </SkillIcons>
     </div>
   );
 }

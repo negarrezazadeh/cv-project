@@ -1,10 +1,10 @@
 import React from "react";
-import SkillsIcons from "./skills-icon";
+import SkillIcons from "../../component/ui/Skill_icons";
 
 export default function Tailwind() {
   return (
     <div>
-      <SkillsIcons desc='Tailwindcss'>
+      <SkillIcons desc='Tailwindcss'>
         <svg
           width="105"
           height="64"
@@ -44,7 +44,7 @@ export default function Tailwind() {
             </clipPath>
           </defs>
         </svg>
-      </SkillsIcons>
+      </SkillIcons>
     </div>
   );
 }

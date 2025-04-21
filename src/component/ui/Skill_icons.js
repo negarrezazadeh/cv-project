@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SkillsIcons({ children, desc }) {
+export default function SkillIcons({ children, desc }) {
   return (
     <div className='flex flex-col justify-center items-center'>
       {children}

@@ -1,10 +1,10 @@
 import React from "react";
-import SkillsIcons from "./skills-icon";
+import SkillIcons from "../../component/ui/Skill_icons";
 
 export default function Javascript() {
   return (
     <div>
-      <SkillsIcons desc='Javascript'>
+      <SkillIcons desc='Javascript'>
         <svg
           width="64"
           height="64"
@@ -18,7 +18,7 @@ export default function Javascript() {
             fill="#000001"
           />
         </svg>
-      </SkillsIcons>
+      </SkillIcons>
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import React from "react";
-import SkillsIcons from "./skills-icon";
+import SkillIcons from "../../component/ui/Skill_icons";
 
 export default function Git() {
   return (
     <div>
-      <SkillsIcons desc="Git">
+      <SkillIcons desc="Git">
         {
           <svg
             width="64"
@@ -19,7 +19,7 @@ export default function Git() {
             />
           </svg>
         }
-      </SkillsIcons>
+      </SkillIcons>
     </div>
   );
 }

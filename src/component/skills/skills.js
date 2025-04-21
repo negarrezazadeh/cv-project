@@ -13,7 +13,7 @@ import FireBase from "../../assets/icons/fire-base";
 import Bootstrap from "../../assets/icons/bootstrap";
 import Redux from "../../assets/icons/redux";
 import TypeScript from "../../assets/icons/ts.png";
-import SkillsIcons from "../../assets/icons/skills-icon";
+import SkillIcons from "../ui/Skill_icons";
 
 export default function Skills() {
   const { t } = useTranslation();
@@ -29,9 +29,9 @@ export default function Skills() {
           <Javascript />
           <Reactjs />
           <NextJs />
-          <SkillsIcons desc="TypeScript">
+          <SkillIcons desc="TypeScript">
             <img src={TypeScript} alt="TypeScript logo" className="h-16 w-16" />
-          </SkillsIcons>
+          </SkillIcons>
           <Redux />
           <Bootstrap />
           <Tailwind />

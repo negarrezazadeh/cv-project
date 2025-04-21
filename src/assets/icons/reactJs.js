@@ -1,10 +1,10 @@
 import React from "react";
-import SkillsIcons from "./skills-icon";
+import SkillIcons from "../../component/ui/Skill_icons";
 
 export default function ReactJs() {
   return (
     <div>
-      <SkillsIcons desc="React">
+      <SkillIcons desc="React">
         <svg
           width="70"
           height="64"
@@ -44,7 +44,7 @@ export default function ReactJs() {
             </clipPath>
           </defs>
         </svg>
-      </SkillsIcons>
+      </SkillIcons>
     </div>
   );
 }

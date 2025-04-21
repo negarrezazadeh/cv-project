@@ -1,10 +1,10 @@
 import React from "react";
-import SkillsIcons from "./skills-icon";
+import SkillIcons from "../../component/ui/Skill_icons";
 
 export default function Figmaa() {
   return (
     <div>
-      <SkillsIcons desc='Figma'>
+      <SkillIcons desc='Figma'>
         {
           <svg
             width="44"
@@ -47,7 +47,7 @@ export default function Figmaa() {
             </defs>
           </svg>
         }
-      </SkillsIcons>
+      </SkillIcons>
     </div>
   );
 }
