@@ -55,6 +55,15 @@
     "button": "Work",
     "description": "Here is a quick summary of my most recent experiences:",
     "samples": {
+      "relara": {
+        "title": "Relara Shop",
+        "desc": "Modern and fully responsive e-commerce website built with Next.js and Tailwind CSS, connected to a back-end to dynamically fetch and display data like products, categories, and discounts. Fully integrated with the Relara Admin Panel for content and inventory management."
+      },
+
+      "relaraPanel": {
+        "title": "Relara Panel",
+        "desc": "E-commerce Admin Panel That Has Features Like secure login with role-based access, category management (create, edit, delete), product creation and editing with full details, support for custom attributes per product, image gallery management, and the ability to define and manage discount codes."
+      },
       "geshniz": {
         "title": "Geshniz",
         "desc": "This site is a single-page food ordering website written with NextJS and has a user panel, shopping cart, and products that use Redux Toolkit technology."
