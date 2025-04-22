@@ -25,14 +25,14 @@ export default function Works() {
           title={t("works.samples.relara.title")}
           desc={t("works.samples.relara.desc")}
           tech={["NextJs", "TailwindCss", "shadCn"]}
-          url={"https://github.com/pouriasabaghi/relara_shop"}
+          github={"https://github.com/pouriasabaghi/relara_shop"}
         />
         <WorkCard
           img={relarapanel}
           title={t("works.samples.relaraPanel.title")}
           desc={t("works.samples.relaraPanel.desc")}
           tech={["React", "React query", "TailwindCss", "shadCn"]}
-          url={"https://github.com/negarrezazadeh/relara"}
+          github={"https://github.com/negarrezazadeh/relara"}
         />
         <WorkCard
           img={geshniz}
@@ -40,6 +40,7 @@ export default function Works() {
           desc={t("works.samples.geshniz.desc")}
           tech={["NextJs", "Redux-toolkit", "TailwindCss"]}
           url={"https://geshniz.vercel.app/"}
+          github={"https://github.com/negarrezazadeh/geshniz"}
         />
         {/* <WorkCard
           img={narcis}
@@ -54,6 +55,7 @@ export default function Works() {
           desc={t("works.samples.shopCenter.desc")}
           tech={["NextJs", "Redux-toolkit", "Firebase", "TailwindCss"]}
           url={"https://shopcenter-eosin.vercel.app/"}
+          github={"https://github.com/negarrezazadeh/shop-center"}
         />
       </div>
     </Element>
